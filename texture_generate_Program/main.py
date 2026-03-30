@@ -2,10 +2,8 @@
 Only Windows!
 It will not work in non-Windows environments such as Linux.
 
-Also, it will not work on English versions of Windows (due to missing fonts).
 
 LinuxなどのWindows以外の環境では動かない。
-また、英語版Windowsでも動かない。(フォントがないため)
 
 日本語版で!
 """
@@ -16,13 +14,17 @@ Pillowインストールしてから
 """
 
 # --- 設定 ---
-FONT_PATH = "C:/Windows/Fonts/msgothic.ttc" 
+FONT_PATH = "C:/Windows/Fonts/msgothic.ttc" # 好きなフォントに変更できるかも? 
 FONT_SIZE = 14
 CHAR_SIZE = 16
 OUTPUT_DIR = "textures"
 #このディレクトリのtexturesに保存される!
 
 # 英語大小、ひらがな大小、カタカナ大小、数字、記号
+"""
+ここ(CHAR_LIST)に追加したい文字を追加(?日本語おかしい)
+リスト内のコメントを真似る
+"""
 CHAR_LIST = (
     "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     "abcdefghijklmnopqrstuvwxyz"

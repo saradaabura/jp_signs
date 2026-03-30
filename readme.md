@@ -22,7 +22,8 @@ minecloniaで日本語を打つことができる看板が追加されるMOD。�
 
 ### 他の文字にも対応させたい場合
 - このリポジトリをクローンする。
-- texture_generate_Program内のmain.pyを実行する。
+- texture_generate_Program内のmain.pyを編集し、追加したい文字入れる(main.py要参照)
+- main.pyを実行する
 - texture_generate_Program/textures内の画像データをtextures(modの,リポジトリ直下の)にコピーする
 - texturesフォルダ,init.lua mod_confを一つのフォルダにまとめる(以下のような構成)
 ```
