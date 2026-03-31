@@ -1,22 +1,23 @@
 # このMODについて
-AI(Gemini)によって作られました
+Lua部分はGeminiが,Python部分は私(saradaabura)が作成した。
 
-minecloniaで日本語を打つことができる看板が追加されるMOD。漢字は対応していないが、ひらがなが使える。
+minecloniaで日本語を打つことができる看板が追加されるMOD。
 # 動作確認
 - Mineclonia 0.120.1
 - Luanti 5.15 x64
 - Luanti dev-5.16
 # 問題
-- (さっきも書いたけど)漢字使えない
-- 濁点・半濁点も不完全
+- ~~(さっきも書いたけど)漢字使えない~~
+- ~~濁点・半濁点も不完全~~
+**常用漢字を"https://github.com/PaddlePaddle/PaddleOCR/blob/release/2.7/ppocr/utils/dict/japan_dict.txt"から取得するようにしたので、一般的な漢字はサポート**
 
 # To Do
 - 対応する文字を増やす
-- バリエーションを増やす
+- バリエーションを増やす(看板自体のテクスチャ)
 
 # 使い方
-### ひらがなだけ確実に使えればいい場合
-- 左のReleaseから```jp_signs.7z```をダウンロードする。
+### とりあえず使いたい方は,,,
+- 左のReleaseから```jp_signs.7z```or```jp_signs.zip```をダウンロードする。
 - 展開し、luanti内のmodsフォルダにコピー・移動
 - ワールド設定でこのModを有効にする
 
@@ -24,7 +25,7 @@ minecloniaで日本語を打つことができる看板が追加されるMOD。�
 - このリポジトリをクローンする。
 - texture_generate_Program内のmain.pyを編集し、追加したい文字入れる(main.py要参照)
 - main.pyを実行する
-- texture_generate_Program/textures内の画像データをtextures(modの,リポジトリ直下の)にコピーする
+- texture_generate_Program/textures内の画像データをtextures(modの,リポジトリ直下の)にコピーする(カレントディレクトリがtexture_generate_Programの場合)
 - texturesフォルダ,init.lua mod_confを一つのフォルダにまとめる(以下のような構成)
 ```
 jp_signs
